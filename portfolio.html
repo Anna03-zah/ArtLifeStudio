@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Архитектурная студия, реализующая уникальные проекты">
+    <meta name="author" content="Захарова Анна Александровна">
+    <title>Архитектурная студия</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts -->
+
+<section class="header">
+
+   <a href="index.html" class="logo"> <i class="fas fa-house"></i> ArtLifeStudio </a>
+
+   <nav class="navArt" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="projects.html">Проекты</a>
+   </nav>
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends-->
+<main>
+<!-- gallery preview section stars -->
+<section class="gallery" id="gallery">
+  <div class="heading">
+    <span>Наше портфолио</span>
+    <h3>Индивидуальные решения для каждого клиента</h3>
+  </div>
+
+  <div class="filters">
+    <button class="filter-button" data-filter="all">Все</button>
+    <button class="filter-button" data-filter="residential">Жилые проекты</button>
+    <button class="filter-button" data-filter="commercial">Коммерческие объекты</button>
+    <button class="filter-button" data-filter="public">Общественные здания</button>
+  </div>
+
+  <div class="gallery-grid">
+    <!-- Жилые проекты -->
+
+    <div class="gallery-item residential" data-year="2023" data-scale="small">
+      <img src="images/gal1-img.jpg" alt="Частный дом">
+      <div class="gallery-content">
+        <h4>Частный дом</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2024</p>
+      </div>
+    </div>
+
+    <div class="gallery-item residential" data-year="2022" data-scale="large">
+      <img src="images/gal2-img.jpg" alt="Жилой комплекс">
+      <div class="gallery-content">
+        <h4>Жилой комплекс</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2022</p>
+      </div>
+    </div>
+
+    <div class="gallery-item residential" data-year="2023" data-scale="small">
+      <img src="images/gal3-img.jpg" alt="Коттедж">
+      <div class="gallery-content">
+        <h4>Коттедж</h4>
+        <p>Стиль: Средиземноморскией</p>
+        <p>Год реализации: 2023</p>
+      </div>
+    </div>
+
+    <div class="gallery-item residential" data-year="2023" data-scale="small">
+      <img src="images/gal4-img.jpg" alt="Многоэтажные здания">
+      <div class="gallery-content">
+        <h4>Многоэтажные здания</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2023</p>
+      </div>
+    </div>
+
+    <div class="gallery-item residential" data-year="2022" data-scale="large">
+      <img src="images/gal10-img.jpg" alt="Загородное жилье">
+      <div class="gallery-content">
+        <h4>Загородное жилье</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2020</p>
+      </div>
+    </div>
+
+    <div class="gallery-item residential" data-year="2022" data-scale="large">
+      <img src="images/gal11-img.jpg" alt="Престижное жилье">
+      <div class="gallery-content">
+        <h4>Престижное жилье</h4>
+        <p>Стиль: Готический</p>
+        <p>Год реализации: 2025</p>
+      </div>
+    </div>
+
+    <!-- Коммерческие объекты -->
+    <div class="gallery-item commercial" data-year="2021" data-scale="large">
+      <img src="images/gal5-img.jpg" alt="Офисное здание">
+      <div class="gallery-content">
+        <h4>Офисное здание</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2025</p>
+      </div>
+    </div>
+
+    <div class="gallery-item commercial" data-year="2020" data-scale="medium">
+      <img src="images/gal6-img.jpg" alt="Торговый центр">
+      <div class="gallery-content">
+        <h4>Торговый центр</h4>
+        <p>Стиль: Корпоративный</p>
+        <p>Год реализации: 2021</p>
+      </div>
+    </div>
+
+    <div class="gallery-item commercial" data-year="2021" data-scale="large">
+      <img src="images/gal7-img.jpg" alt="Гостиницы">
+      <div class="gallery-content">
+        <h4>Гостиницы</h4>
+        <p>Стиль: Техно</p>
+        <p>Год реализации: 2020</p>
+      </div>
+    </div>
+
+    <!-- Общественные здания -->
+    <div class="gallery-item public" data-year="2024" data-scale="medium">
+      <img src="images/gal8-img.jpg" alt="Культурный объект">
+      <div class="gallery-content">
+        <h4>Театры</h4>
+        <p>Стиль: Романтический</p>
+        <p>Год реализации: 2022</p>
+      </div>
+    </div>
+
+    <div class="gallery-item public" data-year="2023" data-scale="large">
+      <img src="images/gal9-img.jpg" alt="Спортивное сооружение">
+      <div class="gallery-content">
+        <h4>Стадионы</h4>
+        <p>Стиль: Современный</p>
+        <p>Год реализации: 2023</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- gallery preview section ends -->
+
+<!-- portfolio section starts-->
+
+<section class="portfolio" id="portfolio">
+
+  <div class="heading"> 
+      <span>Проекты в стадии разработки</span> 
+      <h3>Топ 6</h3> 
+  </div>
+
+  <div class="swiper portfolio-slider">
+
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide" data-name="portfolio-1">
+               <img src="images/portfolio-img-1.png" alt="">
+               <h3>Загородный дом в готическом стиле</h3>
+               <div class="price"> $97 345</div>
+              </div>
+
+          <div class="swiper-slide slide" data-name="portfolio-2">
+                <img src="images/portfolio-img-2.png" alt="">
+                <h3>Офисы в эко стиле</h3>
+                <div class="price"> $1 586 620</div>
+               </div>
+
+          <div class="swiper-slide slide" data-name="portfolio-3">
+                <img src="images/portfolio-img-3.png" alt="">
+                <h3>Отели в аристократическом стиле</h3>
+                <div class="price"> $2 135 145</div>
+               </div>
+
+          <div class="swiper-slide slide" data-name="portfolio-4">
+                <img src="images/portfolio-img-4.png" alt="">
+                <h3>Дом в стиле "комфорт и пространство"</h3>
+                <div class="price"> $80 734</div>
+               </div>
+
+          <div class="swiper-slide slide" data-name="portfolio-5">
+                <img src="images/portfolio-img-5.png" alt="">
+                <h3>Жилой комплекс в стиле "будущего"</h3>
+                <div class="price"> $5 173 046</div>
+               </div>
+
+          <div class="swiper-slide slide" data-name="portfolio-6">
+                <img src="images/portfolio-img-6.png" alt="">
+                <h3>Коттедж в современном стиле</h3>
+                <div class="price"> $132 085</div>
+               </div>
+
+        </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+</section>
+
+<!-- portfolio section ends-->
+
+</main>
+<!-- footer section starts -->
+
+<section class="footer">
+
+  <div class="icons-container">
+
+      <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>Часы работы</h3>
+          <p>07:00 до 22:00</p>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>Телефон</h3>
+          <p>+373 77994565</p>
+          <p>+373 (0552) 2-40-45</p>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>ArtLifeStudio@gmail.com</p>
+          <p>Art03Summer@email.ru</p>
+      </div>
+
+      <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>Адрес</h3>
+          <p>г.Тирасполь, ул.Карла Либнехта д. 148, офис 456</p>
+      </div>
+  </div>
+
+  <div class="social-media">
+      <h3>Мы в социальных сетях</h3>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" class="social-link">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://web.telegram.org/" target="_blank" class="social-link">
+              <i class="fab fa-telegram"></i>
+          </a>
+      </div>
+  </div>  
+
+  <div class="footer-content">
+      <p>&copy; Захарова Анна Александровна, ArtLifeStudio 2025</p>
+  </div>
+</section>
+
+  <!-- footer section ends-->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link-->
+<script src="js/script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.projects .projects-container'));
+</script>
+
+</body>
+</html>

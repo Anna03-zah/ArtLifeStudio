@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Архитектурная студия, реализующая уникальные проекты">
+    <meta name="author" content="Захарова Анна Александровна">
+    <title>Архитектурная студия</title>
+
+
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel= "stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts -->
+
+<section class="header">
+
+   <a href="index.html" class="logo"> <i class="fas fa-house"></i> ArtLifeStudio </a>
+   <nav class="navArt" aria-label="Основная навигация">
+    
+        <a href="index.html">Главная</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="projects.html">Проекты</a>
+   </nav>
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends-->
+<main>
+<!-- home section starts -->
+
+<section class="home" id="home">
+  <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+              <div class="content">
+                  <span>Скандинавские, современные, средиземноморские стили в разделе:</span>
+                  <h3>Жилые проекты</h3>
+                  <a href="projects.html" class="btn">посмотреть проекты</a>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+              <div class="content">
+                  <span>Современные, корпоративные, техно, эко стили в разделе:</span>
+                  <h3>Коммерческие проекты</h3>
+                  <a href="projects.html" class="btn">посмотреть проекты</a>
+              </div>
+          </div>
+          <div class="swiper-slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+              <div class="content">
+                  <span>Романтические, современные, готические стили в разделе:</span>
+                  <h3>Общественные проекты</h3>
+                  <a href="projects.html" class="btn">посмотреть проекты</a>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!-- home section ends --> 
+
+<!-- call-to-action section starts -->
+<section class="cta">
+    <div class="cta-content">
+        <h2>Хотите рассчитать стоимость проекта?</h2>
+        <p>Получите точную оценку прямо сейчас, используя наш калькулятор стоимости.</p>
+        <button id="open-calculator" class="btn">Рассчитать стоимость проекта</button>
+    </div>
+</section>
+<!-- call-to-action section ends -->
+
+<!-- modal calculator starts -->
+<div id="calculator-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span id="close-btn">&times;</span>
+        <h3>Калькулятор стоимости проекта</h3>
+        <form id="calculator-form">
+            <label for="projectType">Тип проекта:</label>
+            <select id="projectType" name="project-type">
+                <option value="residential">Жилой</option>
+                <option value="commercial">Коммерческий</option>
+                <option value="public">Общественный</option>
+            </select>
+            <label for="projectSize">Площадь (м²):</label>
+            <input type="number" id="projectSize" name="area" placeholder="Введите площадь" required>
+            <label for="complexity">Сложность:</label>
+            <select id="complexity" name="complexity">
+                <option value="low">Низкая</option>
+                <option value="medium">Средняя</option>
+                <option value="high">Высокая</option>
+            </select>
+            <button id="calculateBtn" type="button" class="btn">Рассчитать</button>
+        </form>
+        <p id="result"></p>
+    </div>
+</div>
+<!-- modal calculator ends -->
+
+<!-- about section starts -->
+
+<section class="about" id="about">
+  <div class="content">
+    <h1 class="title"><strong>О нас</strong></h1>
+    <p>Добро пожаловать в <strong>ArtLifeStudio</strong> — место, где идеи превращаются в гармоничные пространства, а эскизы обретают форму. История нашей студии началась несколько лет назад, когда группа профессионалов с разными подходами и взглядами на архитектуру объединилась в поисках идеального сочетания искусства и функциональности. Мы начали с небольших проектов, но быстро поняли, что наша цель — не просто строить, а создавать уникальные пространства, которые будут вдохновлять и гармонично вписываться в жизнь людей.</p>
+    <p>С самого начала мы стремились вывести архитектуру на новый уровень, сочетая инновационные технологии с глубокой приверженностью к классическим ценностям дизайна. Каждый из нас приносил в работу свою уникальную перспективу: от архитекторов, увлечённых историей и культурой, до дизайнеров, обращённых к современным трендам и инновациям. Этот союз привёл к созданию ArtLifeStudio — студии, которая могла бы предложить не только архитектурные решения, но и искусство создавать пространство для жизни и работы.</p>
+    <p>Мы создаём не просто здания и интерьеры, мы проектируем уникальные решения, которые отражают стиль, функциональность и эстетику. За годы работы мы завершили десятки проектов — от жилых комплексов до культурных и коммерческих объектов, каждый из которых стал воплощением нашей философии. Вдохновляясь простотой и элегантностью, мы стремимся к тому, чтобы каждый проект был не только красивым, но и удобным, и полностью отвечал потребностям наших клиентов.</p>
+
+
+   <div class="icons-container">
+        <div class="icons">
+             <img src="images/about-icon-1.png" alt="Дизайн интерьеров">
+             <h3>Работы по дизайну интерьеров, включая планировки и подбор мебели</h3>
+        </div>  
+        <div class="icons">
+             <img src="images/about-icon-2.png" alt="3D-визуализация">
+             <h3>3D-визуализация. Визуализации, рендеры архитектурных и дизайнерских проектов.</h3>
+        </div>  
+        <div class="icons">
+             <img src="images/about-icon-3.png" alt="Реконструкция">
+             <h3>Ремонт и реконструкция. Обновление старых зданий, интерьеров, ремонтные работы.</h3>
+        </div>           
+    </div>
+  </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- projects section starts -->
+
+<section class="projects" id="projects">
+ 
+    <div class="heading">
+         <span>Избранные проекты</span>
+         <h3>Лучшие работы по мнению клиентов</h3>
+    </div>
+
+    <div class="projects-container">
+
+         <a href="images/galler-img-1.jpg" class="box">
+            <img src="images/galler-img-1.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+         <a href="images/galler-img-2.jpg" class="box">
+            <img src="images/galler-img-2.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+           
+         </a>
+         <a href="images/galler-img-3.jpg" class="box">
+            <img src="images/galler-img-3.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+          
+         </a>
+         <a href="images/galler-img-4.jpg" class="box">
+            <img src="images/galler-img-4.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div> 
+         </a>
+
+         <a href="images/galler-img-5.jpg" class="box">
+            <img src="images/galler-img-5.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+         <a href="images/galler-img-6.jpg" class="box">
+            <img src="images/galler-img-6.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+    </div>
+
+</section>
+
+<!-- project section ends -->
+
+<!-- team section starts -->
+
+<section class="team" id="team">
+    <div class="heading">
+        <h3>Наша команда</h3>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/pic-1.png" alt="Алиса Ковальчук">
+            <h3>Алиса Ковальчук</h3>
+            <p>
+                <strong>Ведущий дизайнер интерьеров</strong><br>
+                "Я верю, что каждый интерьер — это история, которую мы рассказываем через цвет, свет и текстуры."<br>
+                — <em>Специализация:</em> современный минимализм, скандинавский стиль.<br>
+                — <em>Опыт:</em> более 8 лет в сфере дизайна интерьеров.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-2.png" alt="Максим Руденко">
+            <h3>Максим Руденко</h3>
+            <p>
+                <strong>Главный архитектор</strong><br>
+                "Архитектура — это искусство находить баланс между формой, функциональностью и эстетикой."<br>
+                — <em>Специализация:</em> жилые и коммерческие пространства.<br>
+                — <em>Опыт:</em> более 10 лет в проектировании коттеджей и бизнес-центров.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-3.png" alt="София Левченко">
+            <h3>София Левченко</h3>
+            <p>
+                <strong>Менеджер проектов</strong><br>
+                "Каждый проект — это сотни деталей, которые необходимо объединить в единую гармоничную картину."<br>
+                — <em>Специализация:</em> управление проектами и контроль качества.<br>
+                — <em>Опыт:</em> более 6 лет в координации проектов в сфере архитектуры и дизайна.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-4.png" alt="Иван Карпов">
+            <h3>Иван Карпов</h3>
+            <p>
+                <strong>Конструктор</strong><br>
+                "За каждой великой идеей стоит прочный фундамент."<br>
+                — <em>Специализация:</em> расчет конструктивных элементов зданий, обеспечение устойчивости и безопасности проектов.<br>
+                — <em>Опыт:</em> 12 лет в сфере архитектуры.
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-5.png" alt="Анна Соловьева">
+            <h3>Анна Соловьева</h3>
+            <p>
+                <strong>Ландшафтный архитектор</strong><br>
+                "Архитектура – это искусство создавать пространства, которые вдохновляют и остаются актуальными через десятилетия."<br>
+                — <em>Специализация:</em> дизайн жилых и общественных зданий, разработка концептуальных проектов.<br>
+                — <em>Опыт:</em> более 15 лет в архитектурном проектировании. 
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="images/pic-6.png" alt="Дмитрий Лебедев">
+            <h3>Дмитрий Лебедев</h3>
+            <p>
+                <strong>Архитектор-урбанист</strong><br>
+                "Город – это не только здания, но и связи между людьми, которые мы можем укрепить архитектурой."<br>
+                — <em>Специализация:</em> управление проектами и контроль качества.<br>
+                — <em>Опыт:</em> более 9 лет в координации проектов в сфере архитектуры.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- team section ends -->
+
+<!-- contacts section stasts -->
+
+<section id="contacts" class="contacts">
+    <div class="heading">
+        <span>Контактная информация</span>
+        <h3>Оставить заявку на заказ</h3>
+    </div>
+
+    <form id="contact-form" action="javascript:void(0)">
+        <div class="box-container">
+            <div class="box">
+                <div class="inputBox">
+                    <span>ФИО</span>
+                    <input type="text" name="fio" placeholder="Введите свое ФИО" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Название услуги</span>
+                    <input type="text" name="service-name" placeholder="Услугу, которую Вы хотите (дизайн интерьера, архитектура и тп.)" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Детали заказа</span>
+                    <input type="text" name="order-details" placeholder="Особенности связанные с архитектурой" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Адрес проживания</span>
+                    <textarea name="address" placeholder="Укажите свой адрес" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inputBox">
+                    <span>Номер телефона</span>
+                    <input type="number" name="phone" placeholder="Введите номер телефона" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Примерный Ваш бюджет</span>
+                    <input type="number" name="budget" placeholder="Примерный Ваш бюджет" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Дата</span>
+                    <input type="datetime-local" name="date" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Где нас найти</span>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.200143049813!2d29.627194175402998!3d46.83974984061835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c903000b8bcd39%3A0xa52d714941fba177!2z0KLQuNGA0LDRgdC_0L7Qu9GM!5e0!3m2!1sru!2s!4v1734967123700!5m2!1sru!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Отправить заявку" class="btn">
+    </form>
+</section>
+
+<!-- contacts section ends -->
+</main>
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-clock"></i>
+            <h3>Часы работы</h3>
+            <p>07:00 до 22:00</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>Телефон</h3>
+            <p>+373 77994565</p>
+            <p>+373 (0552) 2-40-45</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>ArtLifeStudio@gmail.com</p>
+            <p>Art03Summer@email.ru</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map"></i>
+            <h3>Адрес</h3>
+            <p>г.Тирасполь, ул.Карла Либнехта д. 148, офис 456</p>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h3>Мы в социальных сетях</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://web.telegram.org/" target="_blank" class="social-link">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </div>  
+
+    <div class="footer-content">
+        <p>&copy; Захарова Анна Александровна, ArtLifeStudio 2025</p>
+    </div>
+</section>
+
+    <!-- footer section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link-->
+<script src="js/script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.projects .projects-container'));
+</script>
+
+</body>
+</html>
